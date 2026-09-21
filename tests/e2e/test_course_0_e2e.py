@@ -8,6 +8,7 @@ Validates the complete 15-module curriculum bridging basic Python to autonomous 
 - Tier 4: Real-World Integration (mini_agent end-to-end execution, SQLite memory persistence, ContextVars propagation, Tool registry)
 """
 
+import importlib.util
 import os
 import re
 import subprocess
@@ -120,6 +121,80 @@ class TestTier1Course0Structure:
         )
         assert (COURSE_0_DIR / "exercises").is_dir(), "exercises/ directory missing"
         assert (COURSE_0_DIR / "solutions").is_dir(), "solutions/ directory missing"
+
+    def test_course_0_exercises_and_solutions_contracts(self):
+        """
+        Verify that Course 0 student exercises contain TODO markers and stubs,
+        while decoupled solutions contain complete implementations with zero TODOs
+        and pass all reference verification checks.
+        """
+        exercises_file = COURSE_0_DIR / "exercises" / "exercises_c0_modules.py"
+        solutions_file = COURSE_0_DIR / "solutions" / "solutions_c0_modules.py"
+
+        assert exercises_file.exists(), f"exercises_c0_modules.py missing at {exercises_file}"
+        assert solutions_file.exists(), f"solutions_c0_modules.py missing at {solutions_file}"
+
+        # 1. Verify student exercises contain TODO markers (minimum 5)
+        ex_content = exercises_file.read_text(encoding="utf-8")
+        ex_todos = re.findall(r"\bTODO\b", ex_content, re.IGNORECASE)
+        assert len(ex_todos) >= 5, (
+            f"Expected at least 5 TODO markers in {exercises_file.name}, found {len(ex_todos)}"
+        )
+
+        # 2. Verify exercise stubs raise NotImplementedError when uncompleted
+        spec = importlib.util.spec_from_file_location("exercises_c0_modules", exercises_file)
+        assert spec is not None and spec.loader is not None
+        ex_mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(ex_mod)
+
+        with pytest.raises(NotImplementedError):
+            ex_mod.student_safe_add(1.0, 2.0)
+        with pytest.raises(NotImplementedError):
+            repr(ex_mod.StudentAgentMessage("user", "test"))
+        with pytest.raises(NotImplementedError):
+            str(ex_mod.StudentAgentMessage("user", "test"))
+        with pytest.raises(NotImplementedError):
+            ex_mod.student_strip_fences("```json {} ```")
+        with pytest.raises(NotImplementedError):
+            ex_mod.student_cosine_similarity([1.0, 0.0], [0.0, 1.0])
+        with pytest.raises(NotImplementedError):
+            ex_mod.student_softmax([1.0, 2.0])
+
+        # 3. Verify exercises workbook executes cleanly with pending notice and exit code 0
+        ex_res = subprocess.run(
+            [sys.executable, str(exercises_file)],
+            capture_output=True,
+            text=True,
+            timeout=15,
+            cwd=str(REPO_ROOT),
+            env={**os.environ, "PYTHONPATH": str(REPO_ROOT)},
+        )
+        assert ex_res.returncode == 0, (
+            f"exercises_c0_modules.py failed with code {ex_res.returncode}:\n{ex_res.stderr}\n{ex_res.stdout}"
+        )
+        assert "PENDING" in ex_res.stdout or "TODO" in ex_res.stdout
+
+        # 4. Verify reference solutions contain zero TODO markers
+        sol_content = solutions_file.read_text(encoding="utf-8")
+        sol_todos = re.findall(r"\bTODO\b", sol_content, re.IGNORECASE)
+        assert len(sol_todos) == 0, (
+            f"Expected 0 TODO markers in {solutions_file.name}, found {len(sol_todos)}"
+        )
+
+        # 5. Verify reference solutions execute cleanly and pass all checks
+        sol_res = subprocess.run(
+            [sys.executable, str(solutions_file)],
+            capture_output=True,
+            text=True,
+            timeout=15,
+            cwd=str(REPO_ROOT),
+            env={**os.environ, "PYTHONPATH": str(REPO_ROOT)},
+        )
+        assert sol_res.returncode == 0, (
+            f"solutions_c0_modules.py failed with code {sol_res.returncode}:\n{sol_res.stderr}\n{sol_res.stdout}"
+        )
+        assert "All reference solutions verified with 100% pass rate" in sol_res.stdout
+
 
 
 # =====================================================================

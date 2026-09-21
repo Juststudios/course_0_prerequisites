@@ -1,5 +1,13 @@
 # Level 6: Computer Networking Fundamentals & Systems Architecture
 
+## Key Terminology
+* **Client:** The program making the request.
+* **Server:** The program answering the request.
+* **HTTP:** The protocol for web communication.
+* **Endpoint:** A specific URL where an API lives.
+
+
+
 Welcome to **Level 6 Networking**. Modern software systems do not live in isolation. Whether deploying distributed machine learning microservices, streaming sensor telemetry from IoT edge devices, or building high-throughput cloud backends, engineers must understand how data traverses the physical and logical layers of modern computer networks.
 
 This curriculum provides an applied, from-scratch foundation in computer networking designed specifically for engineers and machine learning practitioners.

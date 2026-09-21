@@ -1,5 +1,12 @@
 # Game AI & Board-Game Algorithms
 
+## Key Terminology
+* **State:** The current condition of the game board.
+* **Minimax:** An algorithm for finding the optimal move in a zero-sum game.
+* **Heuristic:** A rule-of-thumb evaluation function.
+
+
+
 Welcome to the **Game Programming and Artificial Intelligence** module!
 
 ## Where Are We in the Curriculum?

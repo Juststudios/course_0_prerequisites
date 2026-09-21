@@ -1,70 +1,66 @@
 """exercises_c0_modules.py - Practical Coding Exercises for Course 0 Modules.
 
-Run this file with pytest or python3 to test exercise implementations.
+Student exercise workbook containing problem stubs with TODO markers.
+Reference solutions are located in course_0_prerequisites/solutions/solutions_c0_modules.py.
 """
 
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional  # noqa: F401
 import math
-import re
+import re  # noqa: F401
 
 
 # Exercise 1: Safe AST Calculator (Module 01 & 09)
 def student_safe_add(a: float, b: float) -> float:
     """Exercise 1.1: Return the sum of two numbers."""
-    return a + b
+    # TODO: Implement safe addition of two floating-point numbers returning float(a + b)
+    raise NotImplementedError("Exercise 1.1: student_safe_add not implemented")
 
 
 # Exercise 2: Dunder representation (Module 02)
 class StudentAgentMessage:
-    """Exercise 2.1: Implement __repr__ and __str__."""
+    """Exercise 2.1: Implement __repr__ and __str__ for Agent Message."""
+
     def __init__(self, role: str, content: str) -> None:
         self.role = role
         self.content = content
 
     def __repr__(self) -> str:
-        return f"StudentAgentMessage(role={self.role!r}, content={self.content!r})"
+        # TODO: Return formal developer representation: StudentAgentMessage(role='...', content='...')
+        raise NotImplementedError("Exercise 2.1: StudentAgentMessage.__repr__ not implemented")
 
     def __str__(self) -> str:
-        return f"[{self.role.upper()}]: {self.content}"
+        # TODO: Return user-facing string representation: [ROLE]: content (with role in uppercase)
+        raise NotImplementedError("Exercise 2.1: StudentAgentMessage.__str__ not implemented")
 
 
 # Exercise 3: Code fence stripper (Module 07)
 def student_strip_fences(text: str) -> str:
     """Exercise 7.1: Extract JSON from markdown backticks."""
-    text = text.strip()
-    match = re.search(r"```(?:json)?\s*([\s\S]*?)\s*```", text)
-    if match:
-        return match.group(1).strip()
-    start = text.find("{")
-    end = text.rfind("}")
-    if start != -1 and end != -1 and end > start:
-        return text[start : end + 1].strip()
-    return text
+    # TODO: Extract raw JSON content from markdown code fences (```json ... ``` or ``` ... ```),
+    # or isolate the outermost balanced curly braces { ... }. Return original string if no fence/braces found.
+    raise NotImplementedError("Exercise 7.1: student_strip_fences not implemented")
 
 
 # Exercise 4: Cosine similarity (Module 15)
 def student_cosine_similarity(u: List[float], v: List[float]) -> float:
     """Exercise 15.1: Calculate cosine similarity between two vectors."""
-    dot = sum(a * b for a, b in zip(u, v))
-    norm_u = math.sqrt(sum(a * a for a in u))
-    norm_v = math.sqrt(sum(b * b for b in v))
-    if norm_u == 0.0 or norm_v == 0.0:
-        return 0.0
-    return dot / (norm_u * norm_v)
+    # TODO: Compute cosine similarity = (u . v) / (||u|| * ||v||). Return 0.0 if either norm is zero.
+    raise NotImplementedError("Exercise 15.1: student_cosine_similarity not implemented")
 
 
 # Exercise 5: Softmax with temperature (Module 15)
 def student_softmax(logits: List[float], temp: float = 1.0) -> List[float]:
     """Exercise 15.2: Calculate numerically stable softmax with temperature."""
-    t = max(1e-4, temp)
-    scaled = [z / t for z in logits]
-    max_z = max(scaled)
-    exp_vals = [math.exp(z - max_z) for z in scaled]
-    sum_exp = sum(exp_vals)
-    return [ev / sum_exp for ev in exp_vals]
+    # TODO: Calculate numerically stable softmax with temperature scaling:
+    # 1. Clamp temperature to minimum 1e-4 to avoid division by zero.
+    # 2. Scale logits: scaled = [z / t for z in logits].
+    # 3. Shift by max(scaled) for numerical stability.
+    # 4. Compute exponentials and return normalized probability distribution.
+    raise NotImplementedError("Exercise 15.2: student_softmax not implemented")
 
 
-def test_student_exercises() -> None:
+def validate_student_exercises() -> None:
+    """Self-check test suite that students can run after implementing exercises."""
     # 1. Test math
     assert student_safe_add(15.0, 27.0) == 42.0
 
@@ -86,8 +82,20 @@ def test_student_exercises() -> None:
     assert probs[0] > 0.99
     assert math.isclose(sum(probs), 1.0)
 
-    print("All exercise validation checks passed successfully!")
+    print("All student exercise validation checks passed successfully!")
+
+
+# Backward compatibility alias
+test_student_exercises = validate_student_exercises
 
 
 if __name__ == "__main__":
-    test_student_exercises()
+    print("=== Course 0 Student Exercise Workbook ===")
+    print("Complete all # TODO items across the 5 exercises above.\n")
+    try:
+        validate_student_exercises()
+    except NotImplementedError as exc:
+        print(f"[PENDING IMPLEMENTATION] {exc}")
+        print("Please implement the # TODO stubs above, then re-run to validate.")
+        print("Reference solutions available at:")
+        print("  course_0_prerequisites/solutions/solutions_c0_modules.py")
