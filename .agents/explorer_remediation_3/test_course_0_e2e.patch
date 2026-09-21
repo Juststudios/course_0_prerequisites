@@ -1,0 +1,44 @@
+--- /home/settings/Documents/pearl/tests/e2e/test_course_0_e2e.py	2026-09-20 13:33:11.058879800 +0000
++++ /home/settings/Documents/pearl/.agents/explorer_remediation_3/test_course_0_e2e_modified.py	2026-09-21 09:59:51.517984718 +0000
+@@ -121,6 +121,41 @@
+         assert (COURSE_0_DIR / "exercises").is_dir(), "exercises/ directory missing"
+         assert (COURSE_0_DIR / "solutions").is_dir(), "solutions/ directory missing"
+ 
++    def test_course_0_exercises_and_solutions_integrity(self):
++        """Verify exercises contain TODO markers and stubs, while solutions are complete with zero TODOs."""
++        ex_file = COURSE_0_DIR / "exercises" / "exercises_c0_modules.py"
++        sol_file = COURSE_0_DIR / "solutions" / "solutions_c0_modules.py"
++
++        assert ex_file.exists(), f"Exercise file missing at {ex_file}"
++        assert sol_file.exists(), f"Solution file missing at {sol_file}"
++
++        # 1. Verify exercise workbook contains TODO markers and NotImplementedError stubs
++        ex_content = ex_file.read_text(encoding="utf-8")
++        todo_matches = re.findall(r"#\s*TODO", ex_content)
++        assert len(todo_matches) >= 5, (
++            f"exercises_c0_modules.py must contain >= 5 # TODO markers, found {len(todo_matches)}"
++        )
++        assert "NotImplementedError" in ex_content, (
++            "exercises_c0_modules.py must contain NotImplementedError stubs"
++        )
++
++        # 2. Verify solution file contains zero unresolved TODO markers
++        sol_content = sol_file.read_text(encoding="utf-8")
++        sol_todos = re.findall(r"#\s*TODO", sol_content)
++        assert len(sol_todos) == 0, (
++            f"solutions_c0_modules.py must not contain unresolved TODO markers, found {len(sol_todos)}"
++        )
++
++        # 3. Verify solutions script executes cleanly and passes all assertions
++        res = subprocess.run(
++            [sys.executable, str(sol_file)],
++            capture_output=True,
++            text=True,
++            timeout=10,
++        )
++        assert res.returncode == 0, f"solutions_c0_modules.py failed: {res.stderr}"
++
++
+ 
+ # =====================================================================
+ # TIER 2: BOUNDARY & FORMATTING (Pedagogical Compliance)
