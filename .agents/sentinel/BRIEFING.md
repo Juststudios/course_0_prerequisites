@@ -20,6 +20,7 @@ Coordinate, monitor, and independently verify the complete rewriting of Course -
 - Active Victory Auditor (Phase 6 Spawned): a6a6362d-76fb-41e7-8a2d-6ef3d86a5a49 (teamwork_preview_victory_auditor_3)
 - Active Orchestrator (Phase 7): a4a2c495-ef3a-4b22-b05c-340d75e5b178 (teamwork_preview_orchestrator_7)
 - Active Victory Auditor (Phase 7): to be spawned on victory claim
+- Active Orchestrator (Phase 7 Gen 2): 3bce7990-c23f-4abd-bf71-5e2e9a3da322 (teamwork_preview_orchestrator_8)
 
 ## 🔒 Key Constraints
 - No technical decisions — relay only
@@ -34,11 +35,11 @@ Coordinate, monitor, and independently verify the complete rewriting of Course -
 - **Delivered results**: Dispatched to Project Orchestrator (teamwork_preview_orchestrator_7); monitoring crons established.
 
 ## Project Status
-- **Phase**: in progress
+- **Phase**: parallel execution (Phase 1/2: test writer + 6 parallel milestone workers M1-M6 covering all 33 modules)
 - **Route**: General -> teamwork_preview_orchestrator
 - **Cron 1 (Reporting)**: task-22 (active)
 - **Cron 2 (Liveness)**: task-24 (active)
-- **Active Subagent**: a4a2c495-ef3a-4b22-b05c-340d75e5b178 (teamwork_preview_orchestrator_7)
+- **Active Subagent**: 3bce7990-c23f-4abd-bf71-5e2e9a3da322 (teamwork_preview_orchestrator_8)
 
 ## Victory Audit Status
 - **Triggered**: no
@@ -50,4 +51,4 @@ Coordinate, monitor, and independently verify the complete rewriting of Course -
 - /home/settings/Documents/pearl/ORIGINAL_REQUEST.md — Mirror of user request log
 - /home/settings/Documents/pearl/.agents/sentinel/BRIEFING.md — Sentinel briefing
 - /home/settings/Documents/pearl/.agents/sentinel/handoff.md — Sentinel handoff record
-- /home/settings/Documents/pearl/.agents/teamwork_preview_orchestrator_7/ — Active orchestrator working directory
+- /home/settings/Documents/pearl/.agents/teamwork_preview_orchestrator_8/ — Active orchestrator working directory

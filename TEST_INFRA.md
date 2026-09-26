@@ -1,115 +1,224 @@
-# Curriculum Completion E2E Test Infrastructure (TEST_INFRA)
+# Course -1 Python Foundations: Test Infrastructure & Verification Architecture
 
-## 1. Architectural Overview
-The End-to-End (E2E) Test Infrastructure for the Curriculum Completion Project provides rigorous, automated verification across all 7 levels of the engineering and computer science curriculum. The test infrastructure validates that code artifacts are not merely syntactically valid or theoretical markdown, but genuinely executable, mathematically sound, performant, and resilient to boundary stress.
+## 1. Overview & Pedagogical Purpose
 
-The suite is executed under Python 3.14 with an isolated Linux runtime, zero proprietary dependencies (leveraging a dual-mode compatibility bridge for TensorFlow and Dormand-Prince RK45 solvers for Simulink models), and strictly adheres to a **4-Tier Test Design Methodology**.
+The Course -1 Python Foundations test infrastructure provides an automated, rigorous, and adversarial acceptance verification framework for all 33 modules in `course_-1_python_foundations/`.
+
+Course -1 transitions learners from complete beginners into engineers capable of building autonomous AI agents. The test harness guarantees that every module delivers authentic instructional depth, complete code examples, structured progressive exercises, and clean reference implementations without shortcuts, stubs, or facades.
+
+---
+
+## 2. Test Architecture Components
+
+The testing infrastructure consists of two interoperable layers:
 
 ```
-tests/e2e/
-├── conftest.py                   # Pytest fixtures, MKL runtime setup, dynamic module loader
-├── test_deep_learning_e2e.py     # Milestone M1: BatchNorm, Dropout, Deep MLP Fault Detection
-├── test_math_game_ai_e2e.py      # Milestone M2: PCA, Logistic Regression GD, Checkers, MCTS, RL
-├── test_networking_tf_e2e.py     # Milestone M3: TCP/IP, UDP, HTTP, FastAPI, ML Serving, TensorFlow
-├── test_capstones_simulink_e2e.py# Milestone M4: Industrial ML Capstone, Reversi AI, Simulink ODE45
-└── run_all_e2e_tests.py          # Master test runner with formatted Unicode scorecard
+                                  +------------------------------------------+
+                                  |         Course -1 Acceptance Harness      |
+                                  +------------------------------------------+
+                                                       |
+                        +------------------------------+------------------------------+
+                        |                                                             |
+                        v                                                             v
+       +----------------------------------+                         +----------------------------------+
+       |   scripts/verify_course_minus_1.py|                         | tests/e2e/test_course_minus_1... |
+       +----------------------------------+                         +----------------------------------+
+       | - Fast standalone CLI auditor    |                         | - Standard Pytest test suite     |
+       | - Modular filters (-m, -c)       |                         | - Parametrized per-module tests  |
+       | - JSON metrics report generator  |                         | - 8 Adversarial integrity checks |
+       | - Colorized ASCII summary table  |                         | - CI/CD and gate review ready    |
+       +----------------------------------+                         +----------------------------------+
+                        \                                                             /
+                         +-----------------------------+-----------------------------+
+                                                       |
+                                                       v
+                                  +------------------------------------------+
+                                  | 33 Modules: course_-1_python_foundations |
+                                  |   - README.md (18 canonical sections)    |
+                                  |   - Primary lesson .py (>= 150 lines)    |
+                                  |   - exercises.py (4 distinct levels)     |
+                                  |   - solutions.py (exit code 0, no NIE)   |
+                                  +------------------------------------------+
+```
+
+### 2.1. Standalone Verification Script (`scripts/verify_course_minus_1.py`)
+- **Role**: Lightweight, zero-dependency auditor for fast feedback during authoring and milestone reviews.
+- **Capabilities**:
+  - Validates individual modules or any arbitrary subset via `--module` / `-m`.
+  - Runs specific checks (1 to 4) via `--check` / `-c`.
+  - Emits human-readable diagnostic tables (`--verbose`) and machine-parsable JSON reports (`--json <path>`).
+  - Strict exit codes: `0` when 100% of tested modules pass; `1` when any test fails.
+
+### 2.2. Pytest Acceptance Suite (`tests/e2e/test_course_minus_1_acceptance.py`)
+- **Role**: Formal end-to-end acceptance suite executing in pytest runners and CI/CD pipelines.
+- **Organization**:
+  - `TestR1PedagogicalReadme`: 33 parametrized tests verifying 18 headers in order with non-empty content.
+  - `TestR2DetailedLessonScript`: 33 parametrized tests verifying lesson script existence, >= 150 lines, and clean exit 0.
+  - `TestR3ExercisesScaffolding`: 33 parametrized tests verifying 4 exercise tiers and authentic scaffolding.
+  - `TestR3SolutionsExecution`: 33 parametrized tests verifying reference solutions execute cleanly without `NotImplementedError`.
+  - `TestR4ModuleAcceptance`: 33 parametrized tests evaluating full multi-check gate passage per module.
+  - `TestAdversarialHarnessIntegrity`: 8 adversarial tests proving the test harness correctly rejects malformed or facade inputs.
+
+---
+
+## 3. Strict Verification Criteria (R1 – R4)
+
+### Requirement R1: Pedagogical README Specification
+Every module `README.md` must strictly contain the following **18 exact headers in sequential line order**, with non-empty substantive content in every section:
+1. `# Topic` (e.g., `# Topic: What Programming Is`)
+2. `## What You Will Learn`
+3. `## Prerequisites`
+4. `## The Problem`
+5. `## Key Terminology`
+6. `## Intuition`
+7. `## Concept`
+8. `## Syntax`
+9. `## Example`
+10. `## Line-by-Line Explanation`
+11. `## What Python Is Doing`
+12. `## Common Mistakes`
+13. `## Real-World Uses`
+14. `## Connection to AI Agents`
+15. `## Practice`
+16. `## Challenge`
+17. `## Summary`
+18. `## What You Should Know Before Moving On`
+
+**Validation Rules**:
+- Missing any header $\rightarrow$ **FAIL**.
+- Headers out of sequential order $\rightarrow$ **FAIL**.
+- Any section containing only empty lines or whitespace $\rightarrow$ **FAIL**.
+
+### Requirement R2: Detailed Python Lesson Script
+Each module must contain a primary `.py` lesson script:
+- Must resolve either via the canonical filename map (e.g., `what_programming_is.py`, `hello.py`, `flow.py`, `functions.py`) or by scanning the directory for the largest non-scaffolding `.py` file.
+- Must be **at least 150 lines long** (`min_lines=150`).
+- Must execute cleanly (`exit code 0`) under `python3` within a 25-second timeout window.
+- Must execute in an isolated subprocess with `PYTHONPATH` configured to resolve both repo root and local module files.
+
+### Requirement R3: Authentic 4-Tier Exercises
+Each module must contain `exercises.py`:
+- Must include **4 distinct levels**:
+  1. `Recall` (e.g., `Level 1: Recall` or `Tier 1: Recall`)
+  2. `Modify` (e.g., `Level 2: Modify` or `Tier 2: Modify`)
+  3. `Build` (e.g., `Level 3: Build` or `Tier 3: Build`)
+  4. `Debug` (e.g., `Level 4: Debug` or `Tier 4: Debug`)
+- Must contain authentic scaffolding: `# TODO` comments or `raise NotImplementedError` statements.
+
+### Requirement R3: Decoupled Working Solutions
+Each module must contain `solutions.py`:
+- Must be decoupled from `exercises.py`.
+- Must be at least 10 lines long (not an empty stub).
+- Must contain **no unresolved `NotImplementedError`** statements.
+- Must execute cleanly (`exit code 0`) when run directly with `python3` within 25 seconds.
+
+### Requirement R4: 100% Curriculum Completeness
+All 33 modules in `course_-1_python_foundations/` must simultaneously pass all checks (Checks 1–4).
+
+---
+
+## 4. Adversarial Verification & Anti-Facade Guarantees
+
+To ensure that tests cannot pass trivially or via superficial stubs, `TestAdversarialHarnessIntegrity` exercises synthetic edge-case directories and asserts that the harness actively rejects:
+1. **Missing Headers**: Verifies failure when a required header (e.g., `Syntax`) is omitted.
+2. **Out-of-Order Headers**: Verifies failure when headers are transposed (e.g., `Syntax` before `Concept`).
+3. **Empty Sections**: Verifies failure when a header is followed immediately by the next header without text.
+4. **Short Lesson Files**: Verifies failure when a lesson script has fewer than 150 lines.
+5. **Runtime Crashes**: Verifies failure when a lesson script raises an unhandled exception or non-zero exit code.
+6. **Missing Exercise Levels**: Verifies failure when any tier (Recall, Modify, Build, Debug) is absent.
+7. **Missing Scaffolding**: Verifies failure when exercises have no `# TODO` or `NotImplementedError`.
+8. **Incomplete Solutions**: Verifies failure when a solution file leaves `NotImplementedError` in place.
+
+---
+
+## 5. Execution Commands & Recipes
+
+### 5.1. Standalone Verification Script Commands
+
+```bash
+# Run full verification across all 33 modules with ASCII summary table
+python3 scripts/verify_course_minus_1.py
+
+# Run with verbose diagnostic logs showing exact missing headers or exit codes
+python3 scripts/verify_course_minus_1.py --verbose
+
+# Verify a single module (e.g. Module 01)
+python3 scripts/verify_course_minus_1.py --module 01 --verbose
+
+# Verify a batch of modules (e.g. M1 modules 01 through 06)
+python3 scripts/verify_course_minus_1.py --module 01,02,03,04,05,06 --verbose
+
+# Run only specific checks (e.g. Check 1 README and Check 2 Lesson)
+python3 scripts/verify_course_minus_1.py --check 1,2
+
+# Export full machine-readable verification report to JSON
+python3 scripts/verify_course_minus_1.py --json baseline_report.json
+```
+
+### 5.2. Pytest Commands
+
+```bash
+# Run the complete Course -1 acceptance suite
+python3 -m pytest tests/e2e/test_course_minus_1_acceptance.py -v
+
+# Run verification for a single module
+python3 -m pytest tests/e2e/test_course_minus_1_acceptance.py -k "01_what_programming_is" -v
+
+# Run only README structure tests (Check 1) across all modules
+python3 -m pytest tests/e2e/test_course_minus_1_acceptance.py -k "TestR1" -v
+
+# Run only lesson script tests (Check 2)
+python3 -m pytest tests/e2e/test_course_minus_1_acceptance.py -k "TestR2" -v
+
+# Run only exercise scaffolding tests (Check 3)
+python3 -m pytest tests/e2e/test_course_minus_1_acceptance.py -k "TestR3Exercises" -v
+
+# Run only solution execution tests (Check 4)
+python3 -m pytest tests/e2e/test_course_minus_1_acceptance.py -k "TestR3Solutions" -v
+
+# Run the 8 adversarial harness self-verification tests
+python3 -m pytest tests/e2e/test_course_minus_1_acceptance.py -k "TestAdversarial" -v
 ```
 
 ---
 
-## 2. The 4-Tier Test Design Methodology
+## 6. Baseline Status Across Curriculum (2026-09-21)
 
-Every test suite is systematically partitioned into four distinct validation tiers to guarantee layered quality assurance from isolated unit primitives up to autonomous multi-agent pipelines.
+| Check | Requirement | Passing / Total | Pass Rate | Status |
+|---|---|---|---|---|
+| **Check 1** | README 18 Headers (In Order & Non-Empty) | 10 / 33 | 30.3% | 10 Rewritten Modules Pass |
+| **Check 2** | Lesson Script >= 150L & Clean Execution | 10 / 33 | 30.3% | 10 Modules Pass |
+| **Check 3** | Exercises 4 Tiers & Scaffolding | 19 / 33 | 57.6% | 19 Modules Pass |
+| **Check 4** | Solutions Clean Execution (No NIE) | 19 / 33 | 57.6% | 19 Modules Pass |
+| **Overall** | Fully Passing Modules (All 4 Checks) | **9 / 33** | **27.3%** | Baseline Established |
 
-| Tier | Name | Pedagogical & Engineering Purpose | Scope & Techniques |
-|:-----|:-----|:-----------------------------------|:-------------------|
-| **Tier 1** | **Feature Isolation & Primary Contracts** | Verify nominal happy-path behaviors, interface contracts, dimension preservation, and mathematical formulations in isolation. | Unit forward passes, weight updates, API endpoints, socket binding, matrix operations. |
-| **Tier 2** | **Boundary & Corner Condition Stress** | Stress extreme inputs, physical limits, empty payloads, saturated states, and error handling mechanisms. | Ephemeral ports (port 0), 0-byte frames, empty batches, scalar tensors, actuator voltage saturation ($\pm 36\text{ V}$), anti-windup clamping. |
-| **Tier 3** | **Pairwise Cross-Feature Integration** | Evaluate state transfer, pipeline interoperability, and comparative performance between complementary subsystems. | Raw HTTP client against live REST servers, Keras model served via FastAPI, PCA fed into Logistic Regression, Minimax depth scaling, RK45 numerical vs. analytical. |
-| **Tier 4** | **Real-World Autonomous Workflows** | Verify production-grade end-to-end scenarios, headless multi-agent game completion, disturbance rejection, and artifact persistence. | 60-turn autonomous Reversi AI match, closed-loop motor control scorecard, industrial bearing telemetry serving under 50ms latency budget, full capstone execution. |
+### 6.1. Fully Passing Modules (9 Modules)
+1. `01_what_programming_is` (M1)
+2. `02_first_python_programs` (M1)
+3. `07_control_flow` (M2)
+4. `08_functions` (M2)
+5. `17_generators` (M4)
+6. `23_virtual_environments` (M5)
+7. `24_async_python_intro` (M5)
+8. `30_basic_software_architecture` (M6)
+9. `31_python_project_structure` (M6)
 
----
+### 6.2. Partially Passing Modules
+- `09_scope`: Checks 2, 3, 4 PASS (313L lesson, 4-tier exercises, clean solutions). Check 1 FAIL (needs 18-header README rewrite).
+- `25_async_concurrency`: Check 1 PASS (18-header README). Checks 2, 3, 4 FAIL (needs full lesson rewrite >=150L, 4-tier exercises, solutions).
+- `11_files`, `12_modules`, `13_classes_and_oop`, `15_type_hints`, `16_dataclasses`, `18_iterators`, `19_decorators`, `20_context_managers`, `21_testing`: Checks 3 and 4 PASS. Need README and lesson rewrites.
 
-## 3. Test Suites & Milestone Mapping
-
-### Milestone M1: Deep Learning Lessons & Neural Networks
-- **Test File**: `tests/e2e/test_deep_learning_e2e.py`
-- **Markers**: `@pytest.mark.m1`, `@pytest.mark.tier1`, `@pytest.mark.tier2`, `@pytest.mark.tier3`, `@pytest.mark.tier4`
-- **Core Coverage**:
-  - `03_batch_normalization.py`: Mini-batch mean centering ($\mu_B \approx 0$), unit variance ($\sigma_B^2 \approx 1$), learnable affine parameters ($\gamma, \beta$), exponential moving average (EMA) running statistics, deterministic evaluation mode.
-  - `04_dropout.py`: Inverted dropout scaling ($1/(1-p)$), stochastic zeroing in train mode, identity mapping in eval mode, expectation preservation.
-  - `05_deep_mlp_project.py`: `DeepFaultClassifier`, Kaiming He normal weight initialization, multi-class CrossEntropyLoss gradients, validation early stopping.
-  - `exercises_solutions.py`: Manual forward/backward propagation through two-layer MLP, softmax cross-entropy loss, 0 TODO verification.
-  - `machine-learning/assessment/practical_test.py`: Full curriculum 26-module test runner execution.
-
-### Milestone M2: Mathematics & Game AI Implementations
-- **Test File**: `tests/e2e/test_math_game_ai_e2e.py`
-- **Markers**: `@pytest.mark.m2`, `@pytest.mark.tier1`, `@pytest.mark.tier2`, `@pytest.mark.tier3`, `@pytest.mark.tier4`
-- **Core Coverage**:
-  - `04_pca_from_scratch.py`: `PCAScratch` mean centering, sample covariance symmetry, eigenvalue descending order, reconstruction error minimization, parity with `sklearn.decomposition.PCA`.
-  - `01_logistic_regression_from_scratch.py`: `LogisticRegressionGD` sigmoid stability, Binary Cross-Entropy loss monotonic decrease, gradient descent update step, One-vs-Rest multiclass classification, parity with `sklearn.linear_model.LogisticRegression`.
-  - `game-ai/08_checkers/`: 8x8 `CheckersState` board setup, diagonal forward steps, mandatory multi-jump captures, King promotion at opposing baseline, Alpha-Beta minimax heuristic search.
-  - `game-ai/10_mcts/`: `MCTSNode`, Upper Confidence Bounds (UCB1) formula with $c = \sqrt{2}$, selection, expansion, random rollout simulation, backpropagation.
-  - `game-ai/11_reinforcement_learning/`: `GridWorld` MDP transitions, obstacles, terminal state rewards, `QLearningAgent` Bellman update $Q(s, a) \leftarrow Q(s, a) + \alpha [r + \gamma \max_a Q(s', a) - Q(s, a)]$, $\epsilon$-greedy exploration decay.
-
-### Milestone M3: Level 6 Networking & TensorFlow Fundamentals
-- **Test File**: `tests/e2e/test_networking_tf_e2e.py`
-- **Markers**: `@pytest.mark.m3`, `@pytest.mark.tier1`, `@pytest.mark.tier2`, `@pytest.mark.tier3`, `@pytest.mark.tier4`
-- **Core Coverage**:
-  - `networking/01_tcp_ip/`: `TCPEchoServer` and `TCPClient` socket primitives (`AF_INET`, `SOCK_STREAM`), `SO_REUSEADDR`, 4-byte big-endian uint32 length-prefix framing (`!I`), `UDPServer` and `UDPClient` datagram telemetry and structured JSON ACKs, `ConcurrentTCPServer` multi-threaded worker pools.
-  - `networking/02_http_protocols/`: `RawHTTPClient` from-scratch RFC 9112 HTTP/1.1 socket client, status line parsing, header dictionaries, `PythonHTTPServer` built on `http.server.HTTPServer` with REST endpoints (`GET /health`, `GET /api/items`, `POST /api/items`).
-  - `networking/03_rest_apis/`: `FastAPI` telemetry gateway with Pydantic request validation schemas (`SensorCreate`), CRUD endpoints (`/sensors`), query filtering, and `BearingFaultModel` predictive microservice (`POST /predict`, `POST /predict/batch`, `/healthz`, `/readyz`, `/model/info`).
-  - `machine-learning/08_tensorflow_fundamentals/`: Zero-dependency Python 3.14 dual-mode bridge `tf_compat.py`, `tf.constant` immutable tensors, `tf.Variable` mutable state (`assign`, `assign_add`, `assign_sub`), `tf.GradientTape` reverse-mode automatic differentiation (scalar and multi-variable), Keras Sequential, Functional (residual skip connections), and Subclassing APIs (`call(inputs, training)`).
-
-### Milestone M4: Capstones & Simulink Dynamic Modeling
-- **Test File**: `tests/e2e/test_capstones_simulink_e2e.py`
-- **Markers**: `@pytest.mark.m4`, `@pytest.mark.tier1`, `@pytest.mark.tier2`, `@pytest.mark.tier3`, `@pytest.mark.tier4`
-- **Core Coverage**:
-  - `machine-learning/solutions/capstone_solution.py`: Synthetic industrial dataset generation (`industrial_sensor_train.csv`), EDA distributions and correlation heatmaps, robust preprocessing (SimpleImputer + StandardScaler), RandomForest/SVC classifiers, RandomForest/Ridge regressors, PyTorch `FaultClassifierMLP` and `RULRegressorMLP`, confusion matrix, and feature importance rankings.
-  - `game-ai/solutions/reversi_solution.py` & `capstone/reversi_game.py`: `OthelloState` 8-direction raycasting, bracketing, disc flipping, legal move generation, single-pass and consecutive-pass terminal resolution, calibrated Piece-Square Table (PST) heuristic, Alpha-Beta minimax search, and headless self-play (`play_game`).
-  - `engineering-mathematics/simulink/`: Standalone ODE45 companion scripts (`03_rc_circuit_companion.m`, `04_thermal_cooling_companion.m`, `05_dc_motor_companion.m`), model blueprints (`models/*.md`), exercise templates, and decoupled reference solutions in `solutions/`.
-  - `engineering-mathematics/simulink/mini_project_motor_control.m`: Coupled electromechanical DC motor state-space dynamics ($L_a \frac{di_a}{dt} = V - R_a i_a - K_e \omega$, $J \frac{d\omega}{dt} = K_t i_a - b \omega - \tau_L$), closed-loop PI speed control with anti-windup conditional clamping under full load torque step disturbance.
-  - `engineering-mathematics/scripts/verify_package.py`: Automated lexing, block balancing, 1-based indexing verification, and comment ratio audit ($\ge 20\%$).
-
----
-
-## 4. Execution Guide & Commands
-
-### Running All Tests via Master Runner
-```bash
-python tests/e2e/run_all_e2e_tests.py
-```
-
-### Running All Tests via Pytest
-```bash
-pytest tests/e2e/ -v
-```
-
-### Running Specific Milestone Suites
-```bash
-pytest tests/e2e/test_deep_learning_e2e.py -v       # Milestone M1
-pytest tests/e2e/test_math_game_ai_e2e.py -v        # Milestone M2
-pytest tests/e2e/test_networking_tf_e2e.py -v       # Milestone M3
-pytest tests/e2e/test_capstones_simulink_e2e.py -v   # Milestone M4
-```
-
-### Running by Tier Marker
-```bash
-pytest tests/e2e/ -m tier1 -v   # Tier 1: Nominal feature contracts
-pytest tests/e2e/ -m tier2 -v   # Tier 2: Boundaries and edge cases
-pytest tests/e2e/ -m tier3 -v   # Tier 3: Cross-feature integrations
-pytest tests/e2e/ -m tier4 -v   # Tier 4: Real-world workflows
-```
-
----
-
-## 5. Runtime Environment & Compatibility
-- **Python Version**: 3.14.6
-- **Operating System**: Linux 6.6.137+
-- **Environment Flags**:
-  - `MKL_SERVICE_FORCE_INTEL=1`
-  - `MKL_THREADING_LAYER=GNU`
-  - `MPLBACKEND=Agg`
-  - `OMP_NUM_THREADS=2`
-- **TensorFlow Bridge**: Native TensorFlow binary wheels are not compiled for CPython 3.14 yet. The zero-dependency compatibility bridge (`tf_compat.py`) delivers 100% authentic TensorFlow 2.x and Keras 3 syntax backed by PyTorch autograd and NumPy, ensuring zero runtime import errors or crashes.
-- **Simulink Solvers**: In headless continuous-integration environments lacking proprietary MATLAB/Simulink licenses, physical differential equations are integrated using `scipy.integrate.solve_ivp` (Dormand-Prince RK45), matching MATLAB's `ode45` numerical tolerances with $< 10^{-3}$ absolute error against analytical trajectories.
+### 6.3. Modules Requiring Full Authoring (14 Modules)
+- `03_variables_and_data_types`
+- `04_operators`
+- `05_strings`
+- `06_collections`
+- `10_errors_and_exceptions`
+- `14_functional_programming`
+- `22_logging`
+- `26_http_and_json_intro`
+- `27_environment_variables`
+- `28_subprocesses_intro`
+- `29_sqlite_intro`
+- `32_python_debugging`
+- `33_integrated_projects`
