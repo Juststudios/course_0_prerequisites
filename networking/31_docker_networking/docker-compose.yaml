@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  web:
+    image: python:3.9-slim
+    command: python -m http.server 8000
+    ports:
+      - "8080:8000"
+    networks:
+      - agent_net
+
+  database:
+    image: redis:alpine
+    # No ports exposed to host! Only accessible within agent_net.
+    networks:
+      - agent_net
+
+networks:
+  agent_net:
+    driver: bridge

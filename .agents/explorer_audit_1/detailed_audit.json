@@ -1,0 +1,1914 @@
+[
+  {
+    "prefix": "01",
+    "name": "01_what_programming_is",
+    "milestone": "M1",
+    "readme": {
+      "exists": true,
+      "lines": 143,
+      "words": 1630,
+      "headers_present": 18,
+      "missing_headers": [],
+      "in_order": true,
+      "passed": true
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "what_programming_is.py",
+      "lines": 265,
+      "comments": 51,
+      "prints": 41,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 104,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 8,
+      "not_implemented_count": 4,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 116,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "PASS"
+  },
+  {
+    "prefix": "02",
+    "name": "02_first_python_programs",
+    "milestone": "M1",
+    "readme": {
+      "exists": true,
+      "lines": 135,
+      "words": 1343,
+      "headers_present": 18,
+      "missing_headers": [],
+      "in_order": true,
+      "passed": true
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "hello.py",
+      "lines": 193,
+      "comments": 72,
+      "prints": 48,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 90,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 8,
+      "not_implemented_count": 4,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 86,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "PASS"
+  },
+  {
+    "prefix": "03",
+    "name": "03_variables_and_data_types",
+    "milestone": "M1",
+    "readme": {
+      "exists": true,
+      "lines": 9,
+      "words": 42,
+      "headers_present": 3,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "vars.py",
+      "lines": 5,
+      "comments": 0,
+      "prints": 0,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": false,
+      "lines": 0,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 0,
+      "not_implemented_count": 0,
+      "passed": false,
+      "error": "exercises.py missing"
+    },
+    "solutions": {
+      "exists": false,
+      "lines": 0,
+      "exit_code": null,
+      "passed": false,
+      "error": "solutions.py missing"
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "04",
+    "name": "04_operators",
+    "milestone": "M1",
+    "readme": {
+      "exists": true,
+      "lines": 5,
+      "words": 14,
+      "headers_present": 2,
+      "missing_headers": [
+        "Prerequisites",
+        "The Problem",
+        "Key Terminology",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "ops.py",
+      "lines": 6,
+      "comments": 0,
+      "prints": 3,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": false,
+      "lines": 0,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 0,
+      "not_implemented_count": 0,
+      "passed": false,
+      "error": "exercises.py missing"
+    },
+    "solutions": {
+      "exists": false,
+      "lines": 0,
+      "exit_code": null,
+      "passed": false,
+      "error": "solutions.py missing"
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "05",
+    "name": "05_strings",
+    "milestone": "M1",
+    "readme": {
+      "exists": true,
+      "lines": 7,
+      "words": 23,
+      "headers_present": 2,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "strings.py",
+      "lines": 5,
+      "comments": 0,
+      "prints": 3,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": false,
+      "lines": 0,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 0,
+      "not_implemented_count": 0,
+      "passed": false,
+      "error": "exercises.py missing"
+    },
+    "solutions": {
+      "exists": false,
+      "lines": 0,
+      "exit_code": null,
+      "passed": false,
+      "error": "solutions.py missing"
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "06",
+    "name": "06_collections",
+    "milestone": "M1",
+    "readme": {
+      "exists": true,
+      "lines": 9,
+      "words": 46,
+      "headers_present": 3,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "collections_demo.py",
+      "lines": 12,
+      "comments": 3,
+      "prints": 0,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": false,
+      "lines": 0,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 0,
+      "not_implemented_count": 0,
+      "passed": false,
+      "error": "exercises.py missing"
+    },
+    "solutions": {
+      "exists": false,
+      "lines": 0,
+      "exit_code": null,
+      "passed": false,
+      "error": "solutions.py missing"
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "07",
+    "name": "07_control_flow",
+    "milestone": "M2",
+    "readme": {
+      "exists": true,
+      "lines": 233,
+      "words": 2143,
+      "headers_present": 18,
+      "missing_headers": [],
+      "in_order": true,
+      "passed": true
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "flow.py",
+      "lines": 299,
+      "comments": 62,
+      "prints": 56,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 166,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 6,
+      "not_implemented_count": 6,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 168,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "PASS"
+  },
+  {
+    "prefix": "08",
+    "name": "08_functions",
+    "milestone": "M2",
+    "readme": {
+      "exists": true,
+      "lines": 221,
+      "words": 1825,
+      "headers_present": 18,
+      "missing_headers": [],
+      "in_order": true,
+      "passed": true
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "functions.py",
+      "lines": 301,
+      "comments": 55,
+      "prints": 46,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 146,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 6,
+      "not_implemented_count": 6,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 151,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "PASS"
+  },
+  {
+    "prefix": "09",
+    "name": "09_scope",
+    "milestone": "M2",
+    "readme": {
+      "exists": true,
+      "lines": 6,
+      "words": 21,
+      "headers_present": 2,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "scope.py",
+      "lines": 313,
+      "comments": 66,
+      "prints": 49,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 139,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 6,
+      "not_implemented_count": 6,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 158,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "10",
+    "name": "10_errors_and_exceptions",
+    "milestone": "M2",
+    "readme": {
+      "exists": true,
+      "lines": 5,
+      "words": 31,
+      "headers_present": 2,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Key Terminology",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "errors.py",
+      "lines": 5,
+      "comments": 0,
+      "prints": 1,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": false,
+      "lines": 0,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 0,
+      "not_implemented_count": 0,
+      "passed": false,
+      "error": "exercises.py missing"
+    },
+    "solutions": {
+      "exists": false,
+      "lines": 0,
+      "exit_code": null,
+      "passed": false,
+      "error": "solutions.py missing"
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "11",
+    "name": "11_files",
+    "milestone": "M2",
+    "readme": {
+      "exists": true,
+      "lines": 25,
+      "words": 163,
+      "headers_present": 6,
+      "missing_headers": [
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Real-World Uses",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "files.py",
+      "lines": 49,
+      "comments": 12,
+      "prints": 7,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 33,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 2,
+      "not_implemented_count": 1,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 19,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "12",
+    "name": "12_modules",
+    "milestone": "M3",
+    "readme": {
+      "exists": true,
+      "lines": 20,
+      "words": 134,
+      "headers_present": 3,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "modules.py",
+      "lines": 43,
+      "comments": 16,
+      "prints": 7,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 14,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 0,
+      "not_implemented_count": 1,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 12,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "13",
+    "name": "13_classes_and_oop",
+    "milestone": "M3",
+    "readme": {
+      "exists": true,
+      "lines": 19,
+      "words": 151,
+      "headers_present": 3,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "classes_and_oop.py",
+      "lines": 74,
+      "comments": 7,
+      "prints": 7,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 21,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 0,
+      "not_implemented_count": 1,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 21,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "14",
+    "name": "14_functional_programming",
+    "milestone": "M3",
+    "readme": {
+      "exists": false,
+      "lines": 0,
+      "words": 0,
+      "headers_present": 0,
+      "missing_headers": [
+        "Topic",
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Key Terminology",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "error": "README.md missing"
+    },
+    "lesson": {
+      "exists": false,
+      "filename": null,
+      "lines": 0,
+      "comments": 0,
+      "prints": 0,
+      "exit_code": null,
+      "passed": false,
+      "error": "Main lesson script not found"
+    },
+    "exercises": {
+      "exists": false,
+      "lines": 0,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 0,
+      "not_implemented_count": 0,
+      "passed": false,
+      "error": "exercises.py missing"
+    },
+    "solutions": {
+      "exists": false,
+      "lines": 0,
+      "exit_code": null,
+      "passed": false,
+      "error": "solutions.py missing"
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "15",
+    "name": "15_type_hints",
+    "milestone": "M3",
+    "readme": {
+      "exists": true,
+      "lines": 21,
+      "words": 130,
+      "headers_present": 2,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "type_hints.py",
+      "lines": 55,
+      "comments": 13,
+      "prints": 5,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 21,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 1,
+      "not_implemented_count": 1,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 16,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "16",
+    "name": "16_dataclasses",
+    "milestone": "M3",
+    "readme": {
+      "exists": true,
+      "lines": 20,
+      "words": 82,
+      "headers_present": 3,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "dataclasses_lesson.py",
+      "lines": 40,
+      "comments": 5,
+      "prints": 5,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 19,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 0,
+      "not_implemented_count": 1,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 19,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "17",
+    "name": "17_generators",
+    "milestone": "M4",
+    "readme": {
+      "exists": true,
+      "lines": 217,
+      "words": 2225,
+      "headers_present": 18,
+      "missing_headers": [],
+      "in_order": true,
+      "passed": true
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "generators.py",
+      "lines": 255,
+      "comments": 27,
+      "prints": 54,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 128,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 8,
+      "not_implemented_count": 4,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 129,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "PASS"
+  },
+  {
+    "prefix": "18",
+    "name": "18_iterators",
+    "milestone": "M4",
+    "readme": {
+      "exists": true,
+      "lines": 14,
+      "words": 101,
+      "headers_present": 3,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "iterators.py",
+      "lines": 51,
+      "comments": 7,
+      "prints": 7,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 20,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 0,
+      "not_implemented_count": 2,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 18,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "19",
+    "name": "19_decorators",
+    "milestone": "M4",
+    "readme": {
+      "exists": true,
+      "lines": 24,
+      "words": 109,
+      "headers_present": 3,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "decorators.py",
+      "lines": 81,
+      "comments": 4,
+      "prints": 10,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 20,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 0,
+      "not_implemented_count": 2,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 27,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "20",
+    "name": "20_context_managers",
+    "milestone": "M4",
+    "readme": {
+      "exists": true,
+      "lines": 21,
+      "words": 139,
+      "headers_present": 3,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "context_managers.py",
+      "lines": 59,
+      "comments": 11,
+      "prints": 4,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 26,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 0,
+      "not_implemented_count": 4,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 27,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "21",
+    "name": "21_testing",
+    "milestone": "M4",
+    "readme": {
+      "exists": true,
+      "lines": 19,
+      "words": 119,
+      "headers_present": 3,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "testing.py",
+      "lines": 50,
+      "comments": 7,
+      "prints": 3,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 22,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 1,
+      "not_implemented_count": 1,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 38,
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/home/settings/Documents/pearl/course_-1_python_foundations/21_testing/solutions.py\", line 2, in <module>\n    import pytest\nModuleNotFoundError: No module named 'pytest'\n",
+      "passed": false
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "22",
+    "name": "22_logging",
+    "milestone": "M4",
+    "readme": {
+      "exists": true,
+      "lines": 3,
+      "words": 10,
+      "headers_present": 1,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Key Terminology",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "logging_lesson.py",
+      "lines": 1,
+      "comments": 1,
+      "prints": 0,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 3,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 1,
+      "not_implemented_count": 0,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 1,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "23",
+    "name": "23_virtual_environments",
+    "milestone": "M5",
+    "readme": {
+      "exists": true,
+      "lines": 186,
+      "words": 1814,
+      "headers_present": 18,
+      "missing_headers": [],
+      "in_order": true,
+      "passed": true
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "venv_guide.py",
+      "lines": 329,
+      "comments": 34,
+      "prints": 37,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 115,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 4,
+      "not_implemented_count": 5,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 140,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "PASS"
+  },
+  {
+    "prefix": "24",
+    "name": "24_async_python_intro",
+    "milestone": "M5",
+    "readme": {
+      "exists": true,
+      "lines": 177,
+      "words": 1541,
+      "headers_present": 18,
+      "missing_headers": [],
+      "in_order": true,
+      "passed": true
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "async_intro.py",
+      "lines": 284,
+      "comments": 30,
+      "prints": 52,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 104,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 4,
+      "not_implemented_count": 5,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 127,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "PASS"
+  },
+  {
+    "prefix": "25",
+    "name": "25_async_concurrency",
+    "milestone": "M5",
+    "readme": {
+      "exists": true,
+      "lines": 187,
+      "words": 1562,
+      "headers_present": 18,
+      "missing_headers": [],
+      "in_order": true,
+      "passed": true
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "async_concurrency.py",
+      "lines": 27,
+      "comments": 6,
+      "prints": 2,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 3,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 1,
+      "not_implemented_count": 0,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 1,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "26",
+    "name": "26_http_and_json_intro",
+    "milestone": "M5",
+    "readme": {
+      "exists": true,
+      "lines": 3,
+      "words": 13,
+      "headers_present": 1,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Key Terminology",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "http_json_intro.py",
+      "lines": 30,
+      "comments": 5,
+      "prints": 3,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 3,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 1,
+      "not_implemented_count": 0,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 1,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "27",
+    "name": "27_environment_variables",
+    "milestone": "M5",
+    "readme": {
+      "exists": true,
+      "lines": 3,
+      "words": 11,
+      "headers_present": 1,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Key Terminology",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "env_vars.py",
+      "lines": 19,
+      "comments": 7,
+      "prints": 3,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 3,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 1,
+      "not_implemented_count": 0,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 1,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "28",
+    "name": "28_subprocesses_intro",
+    "milestone": "M5",
+    "readme": {
+      "exists": true,
+      "lines": 3,
+      "words": 11,
+      "headers_present": 1,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Key Terminology",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "subprocess_intro.py",
+      "lines": 24,
+      "comments": 4,
+      "prints": 5,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 3,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 1,
+      "not_implemented_count": 0,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 1,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "29",
+    "name": "29_sqlite_intro",
+    "milestone": "M5",
+    "readme": {
+      "exists": true,
+      "lines": 3,
+      "words": 11,
+      "headers_present": 1,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Key Terminology",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "sqlite_intro.py",
+      "lines": 35,
+      "comments": 6,
+      "prints": 4,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 3,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 1,
+      "not_implemented_count": 0,
+      "passed": false
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 1,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "30",
+    "name": "30_basic_software_architecture",
+    "milestone": "M6",
+    "readme": {
+      "exists": true,
+      "lines": 333,
+      "words": 2455,
+      "headers_present": 18,
+      "missing_headers": [],
+      "in_order": true,
+      "passed": true
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "architecture.py",
+      "lines": 311,
+      "comments": 49,
+      "prints": 23,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 160,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 12,
+      "not_implemented_count": 12,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 232,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "PASS"
+  },
+  {
+    "prefix": "31",
+    "name": "31_python_project_structure",
+    "milestone": "M6",
+    "readme": {
+      "exists": true,
+      "lines": 356,
+      "words": 2375,
+      "headers_present": 18,
+      "missing_headers": [],
+      "in_order": true,
+      "passed": true
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "python_project_structure.py",
+      "lines": 331,
+      "comments": 48,
+      "prints": 31,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "exercises": {
+      "exists": true,
+      "lines": 128,
+      "found_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "missing_levels": [],
+      "todo_count": 7,
+      "not_implemented_count": 6,
+      "passed": true
+    },
+    "solutions": {
+      "exists": true,
+      "lines": 255,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    "overall_status": "PASS"
+  },
+  {
+    "prefix": "32",
+    "name": "32_python_debugging",
+    "milestone": "M6",
+    "readme": {
+      "exists": true,
+      "lines": 5,
+      "words": 13,
+      "headers_present": 2,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Key Terminology",
+        "Intuition",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "python_debugging.py",
+      "lines": 47,
+      "comments": 31,
+      "prints": 4,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": false
+    },
+    "exercises": {
+      "exists": false,
+      "lines": 0,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 0,
+      "not_implemented_count": 0,
+      "passed": false,
+      "error": "exercises.py missing"
+    },
+    "solutions": {
+      "exists": false,
+      "lines": 0,
+      "exit_code": null,
+      "passed": false,
+      "error": "solutions.py missing"
+    },
+    "overall_status": "FAIL"
+  },
+  {
+    "prefix": "33",
+    "name": "33_integrated_projects",
+    "milestone": "M6",
+    "readme": {
+      "exists": true,
+      "lines": 29,
+      "words": 142,
+      "headers_present": 1,
+      "missing_headers": [
+        "What You Will Learn",
+        "Prerequisites",
+        "The Problem",
+        "Key Terminology",
+        "Intuition",
+        "Concept",
+        "Syntax",
+        "Example",
+        "Line-by-Line Explanation",
+        "What Python Is Doing",
+        "Common Mistakes",
+        "Real-World Uses",
+        "Connection to AI Agents",
+        "Practice",
+        "Challenge",
+        "Summary",
+        "What You Should Know Before Moving On"
+      ],
+      "in_order": false,
+      "passed": false
+    },
+    "lesson": {
+      "exists": true,
+      "filename": "mini_agent.py",
+      "lines": 138,
+      "comments": 7,
+      "prints": 4,
+      "exit_code": 0,
+      "stderr": "[INFO] Registered tool: 'add'\n[INFO] Registered tool: 'multiply'\n[INFO] Registered tool: 'echo'\n",
+      "passed": false
+    },
+    "exercises": {
+      "exists": false,
+      "lines": 0,
+      "found_levels": [],
+      "missing_levels": [
+        "Recall",
+        "Modify",
+        "Build",
+        "Debug"
+      ],
+      "todo_count": 0,
+      "not_implemented_count": 0,
+      "passed": false,
+      "error": "exercises.py missing"
+    },
+    "solutions": {
+      "exists": false,
+      "lines": 0,
+      "exit_code": null,
+      "passed": false,
+      "error": "solutions.py missing"
+    },
+    "overall_status": "FAIL"
+  }
+]

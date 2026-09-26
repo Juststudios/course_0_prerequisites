@@ -1,0 +1,2419 @@
+{
+  "total_modules": 33,
+  "passed_modules": 9,
+  "success": false,
+  "check_stats": {
+    "1": {
+      "passed": 10,
+      "total": 33
+    },
+    "2": {
+      "passed": 10,
+      "total": 33
+    },
+    "3": {
+      "passed": 19,
+      "total": 33
+    },
+    "4": {
+      "passed": 19,
+      "total": 33
+    }
+  },
+  "modules": [
+    {
+      "num": "01",
+      "name": "01_what_programming_is",
+      "passed": true,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": true,
+          "message": "All 18 required headers present in order with non-empty content (143 lines)",
+          "details": {
+            "found_count": 18,
+            "missing_count": 0,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "missing_headers": [],
+            "line_count": 143
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": true,
+          "message": "what_programming_is.py passed (265 lines, exit code 0)",
+          "details": {
+            "lesson_file": "what_programming_is.py",
+            "line_count": 265,
+            "exit_code": 0
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 104
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 116 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 116,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "02",
+      "name": "02_first_python_programs",
+      "passed": true,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": true,
+          "message": "All 18 required headers present in order with non-empty content (135 lines)",
+          "details": {
+            "found_count": 18,
+            "missing_count": 0,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "missing_headers": [],
+            "line_count": 135
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": true,
+          "message": "hello.py passed (193 lines, exit code 0)",
+          "details": {
+            "lesson_file": "hello.py",
+            "line_count": 193,
+            "exit_code": 0
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 90
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 86 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 86,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "03",
+      "name": "03_variables_and_data_types",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 15/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 3,
+            "missing_count": 15,
+            "found_headers": [
+              "Topic",
+              "Key Terminology",
+              "Intuition"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 9
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "vars.py is only 5 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "vars.py",
+            "line_count": 5,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "exercises.py does not exist",
+          "details": {
+            "exists": false
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py does not exist",
+          "details": {
+            "exists": false
+          }
+        }
+      }
+    },
+    {
+      "num": "04",
+      "name": "04_operators",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 16/18 headers: Prerequisites, The Problem, Key Terminology...",
+          "details": {
+            "found_count": 2,
+            "missing_count": 16,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn"
+            ],
+            "missing_headers": [
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 5
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "ops.py is only 6 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "ops.py",
+            "line_count": 6,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "exercises.py does not exist",
+          "details": {
+            "exists": false
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py does not exist",
+          "details": {
+            "exists": false
+          }
+        }
+      }
+    },
+    {
+      "num": "05",
+      "name": "05_strings",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 16/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 2,
+            "missing_count": 16,
+            "found_headers": [
+              "Topic",
+              "Key Terminology"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 7
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "strings.py is only 5 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "strings.py",
+            "line_count": 5,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "exercises.py does not exist",
+          "details": {
+            "exists": false
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py does not exist",
+          "details": {
+            "exists": false
+          }
+        }
+      }
+    },
+    {
+      "num": "06",
+      "name": "06_collections",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 15/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 3,
+            "missing_count": 15,
+            "found_headers": [
+              "Topic",
+              "Key Terminology",
+              "Connection to AI Agents"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 9
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "collections_demo.py is only 12 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "collections_demo.py",
+            "line_count": 12,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "exercises.py does not exist",
+          "details": {
+            "exists": false
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py does not exist",
+          "details": {
+            "exists": false
+          }
+        }
+      }
+    },
+    {
+      "num": "07",
+      "name": "07_control_flow",
+      "passed": true,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": true,
+          "message": "All 18 required headers present in order with non-empty content (233 lines)",
+          "details": {
+            "found_count": 18,
+            "missing_count": 0,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "missing_headers": [],
+            "line_count": 233
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": true,
+          "message": "flow.py passed (299 lines, exit code 0)",
+          "details": {
+            "lesson_file": "flow.py",
+            "line_count": 299,
+            "exit_code": 0
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 166
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 168 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 168,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "08",
+      "name": "08_functions",
+      "passed": true,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": true,
+          "message": "All 18 required headers present in order with non-empty content (221 lines)",
+          "details": {
+            "found_count": 18,
+            "missing_count": 0,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "missing_headers": [],
+            "line_count": 221
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": true,
+          "message": "functions.py passed (301 lines, exit code 0)",
+          "details": {
+            "lesson_file": "functions.py",
+            "line_count": 301,
+            "exit_code": 0
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 146
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 151 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 151,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "09",
+      "name": "09_scope",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 16/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 2,
+            "missing_count": 16,
+            "found_headers": [
+              "Topic",
+              "Key Terminology"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 6
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": true,
+          "message": "scope.py passed (313 lines, exit code 0)",
+          "details": {
+            "lesson_file": "scope.py",
+            "line_count": 313,
+            "exit_code": 0
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 139
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 158 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 158,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "10",
+      "name": "10_errors_and_exceptions",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 16/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 2,
+            "missing_count": 16,
+            "found_headers": [
+              "Topic",
+              "Connection to AI Agents"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 5
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "errors.py is only 5 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "errors.py",
+            "line_count": 5,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "exercises.py does not exist",
+          "details": {
+            "exists": false
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py does not exist",
+          "details": {
+            "exists": false
+          }
+        }
+      }
+    },
+    {
+      "num": "11",
+      "name": "11_files",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 12/18 headers: Prerequisites, The Problem, Intuition...",
+          "details": {
+            "found_count": 6,
+            "missing_count": 12,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Key Terminology",
+              "Common Mistakes",
+              "Connection to AI Agents",
+              "Practice"
+            ],
+            "missing_headers": [
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Real-World Uses",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 25
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "files.py is only 49 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "files.py",
+            "line_count": 49,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 33
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 19 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 19,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "12",
+      "name": "12_modules",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 15/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 3,
+            "missing_count": 15,
+            "found_headers": [
+              "Topic",
+              "Key Terminology",
+              "Connection to AI Agents"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 20
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "modules.py is only 43 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "modules.py",
+            "line_count": 43,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 14
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 12 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 12,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "13",
+      "name": "13_classes_and_oop",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 15/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 3,
+            "missing_count": 15,
+            "found_headers": [
+              "Topic",
+              "Key Terminology",
+              "Connection to AI Agents"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 19
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "classes_and_oop.py is only 74 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "classes_and_oop.py",
+            "line_count": 74,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 21
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 21 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 21,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "14",
+      "name": "14_functional_programming",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "README.md does not exist",
+          "details": {
+            "found_headers": [],
+            "missing_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ]
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "No main lesson .py file found",
+          "details": {
+            "lesson_file": null,
+            "line_count": 0,
+            "exit_code": null
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "exercises.py does not exist",
+          "details": {
+            "exists": false
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py does not exist",
+          "details": {
+            "exists": false
+          }
+        }
+      }
+    },
+    {
+      "num": "15",
+      "name": "15_type_hints",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 16/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 2,
+            "missing_count": 16,
+            "found_headers": [
+              "Topic",
+              "Key Terminology"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 21
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "type_hints.py is only 55 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "type_hints.py",
+            "line_count": 55,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 21
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 16 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 16,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "16",
+      "name": "16_dataclasses",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 15/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 3,
+            "missing_count": 15,
+            "found_headers": [
+              "Topic",
+              "Key Terminology",
+              "Connection to AI Agents"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 20
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "dataclasses_lesson.py is only 40 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "dataclasses_lesson.py",
+            "line_count": 40,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 19
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 19 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 19,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "17",
+      "name": "17_generators",
+      "passed": true,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": true,
+          "message": "All 18 required headers present in order with non-empty content (217 lines)",
+          "details": {
+            "found_count": 18,
+            "missing_count": 0,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "missing_headers": [],
+            "line_count": 217
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": true,
+          "message": "generators.py passed (255 lines, exit code 0)",
+          "details": {
+            "lesson_file": "generators.py",
+            "line_count": 255,
+            "exit_code": 0
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 128
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 129 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 129,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "18",
+      "name": "18_iterators",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 15/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 3,
+            "missing_count": 15,
+            "found_headers": [
+              "Topic",
+              "Key Terminology",
+              "Connection to AI Agents"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 14
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "iterators.py is only 51 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "iterators.py",
+            "line_count": 51,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 20
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 18 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 18,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "19",
+      "name": "19_decorators",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 15/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 3,
+            "missing_count": 15,
+            "found_headers": [
+              "Topic",
+              "Key Terminology",
+              "Connection to AI Agents"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 24
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "decorators.py is only 81 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "decorators.py",
+            "line_count": 81,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 20
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 27 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 27,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "20",
+      "name": "20_context_managers",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 15/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 3,
+            "missing_count": 15,
+            "found_headers": [
+              "Topic",
+              "Key Terminology",
+              "Connection to AI Agents"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 21
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "context_managers.py is only 59 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "context_managers.py",
+            "line_count": 59,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 26
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 27 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 27,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "21",
+      "name": "21_testing",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 15/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 3,
+            "missing_count": 15,
+            "found_headers": [
+              "Topic",
+              "Key Terminology",
+              "Connection to AI Agents"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 19
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "testing.py is only 50 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "testing.py",
+            "line_count": 50,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 22
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 38 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 38,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "22",
+      "name": "22_logging",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 17/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 1,
+            "missing_count": 17,
+            "found_headers": [
+              "Topic"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 3
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "logging_lesson.py is only 1 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "logging_lesson.py",
+            "line_count": 1,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "missing levels: Recall, Modify, Build, Debug",
+          "details": {
+            "found_levels": [],
+            "missing_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "has_todo": true,
+            "has_not_implemented": false,
+            "line_count": 3
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py is a stub (1 lines)",
+          "details": {
+            "line_count": 1
+          }
+        }
+      }
+    },
+    {
+      "num": "23",
+      "name": "23_virtual_environments",
+      "passed": true,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": true,
+          "message": "All 18 required headers present in order with non-empty content (186 lines)",
+          "details": {
+            "found_count": 18,
+            "missing_count": 0,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "missing_headers": [],
+            "line_count": 186
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": true,
+          "message": "venv_guide.py passed (329 lines, exit code 0)",
+          "details": {
+            "lesson_file": "venv_guide.py",
+            "line_count": 329,
+            "exit_code": 0
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 115
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 140 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 140,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "24",
+      "name": "24_async_python_intro",
+      "passed": true,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": true,
+          "message": "All 18 required headers present in order with non-empty content (177 lines)",
+          "details": {
+            "found_count": 18,
+            "missing_count": 0,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "missing_headers": [],
+            "line_count": 177
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": true,
+          "message": "async_intro.py passed (284 lines, exit code 0)",
+          "details": {
+            "lesson_file": "async_intro.py",
+            "line_count": 284,
+            "exit_code": 0
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 104
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 127 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 127,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "25",
+      "name": "25_async_concurrency",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": true,
+          "message": "All 18 required headers present in order with non-empty content (187 lines)",
+          "details": {
+            "found_count": 18,
+            "missing_count": 0,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "missing_headers": [],
+            "line_count": 187
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "async_concurrency.py is only 27 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "async_concurrency.py",
+            "line_count": 27,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "missing levels: Recall, Modify, Build, Debug",
+          "details": {
+            "found_levels": [],
+            "missing_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "has_todo": true,
+            "has_not_implemented": false,
+            "line_count": 3
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py is a stub (1 lines)",
+          "details": {
+            "line_count": 1
+          }
+        }
+      }
+    },
+    {
+      "num": "26",
+      "name": "26_http_and_json_intro",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 17/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 1,
+            "missing_count": 17,
+            "found_headers": [
+              "Topic"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 3
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "http_json_intro.py is only 30 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "http_json_intro.py",
+            "line_count": 30,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "missing levels: Recall, Modify, Build, Debug",
+          "details": {
+            "found_levels": [],
+            "missing_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "has_todo": true,
+            "has_not_implemented": false,
+            "line_count": 3
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py is a stub (1 lines)",
+          "details": {
+            "line_count": 1
+          }
+        }
+      }
+    },
+    {
+      "num": "27",
+      "name": "27_environment_variables",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 17/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 1,
+            "missing_count": 17,
+            "found_headers": [
+              "Topic"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 3
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "env_vars.py is only 19 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "env_vars.py",
+            "line_count": 19,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "missing levels: Recall, Modify, Build, Debug",
+          "details": {
+            "found_levels": [],
+            "missing_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "has_todo": true,
+            "has_not_implemented": false,
+            "line_count": 3
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py is a stub (1 lines)",
+          "details": {
+            "line_count": 1
+          }
+        }
+      }
+    },
+    {
+      "num": "28",
+      "name": "28_subprocesses_intro",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 17/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 1,
+            "missing_count": 17,
+            "found_headers": [
+              "Topic"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 3
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "subprocess_intro.py is only 24 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "subprocess_intro.py",
+            "line_count": 24,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "missing levels: Recall, Modify, Build, Debug",
+          "details": {
+            "found_levels": [],
+            "missing_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "has_todo": true,
+            "has_not_implemented": false,
+            "line_count": 3
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py is a stub (1 lines)",
+          "details": {
+            "line_count": 1
+          }
+        }
+      }
+    },
+    {
+      "num": "29",
+      "name": "29_sqlite_intro",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 17/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 1,
+            "missing_count": 17,
+            "found_headers": [
+              "Topic"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 3
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "sqlite_intro.py is only 35 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "sqlite_intro.py",
+            "line_count": 35,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "missing levels: Recall, Modify, Build, Debug",
+          "details": {
+            "found_levels": [],
+            "missing_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "has_todo": true,
+            "has_not_implemented": false,
+            "line_count": 3
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py is a stub (1 lines)",
+          "details": {
+            "line_count": 1
+          }
+        }
+      }
+    },
+    {
+      "num": "30",
+      "name": "30_basic_software_architecture",
+      "passed": true,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": true,
+          "message": "All 18 required headers present in order with non-empty content (333 lines)",
+          "details": {
+            "found_count": 18,
+            "missing_count": 0,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "missing_headers": [],
+            "line_count": 333
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": true,
+          "message": "architecture.py passed (311 lines, exit code 0)",
+          "details": {
+            "lesson_file": "architecture.py",
+            "line_count": 311,
+            "exit_code": 0
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 160
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 232 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 232,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "31",
+      "name": "31_python_project_structure",
+      "passed": true,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": true,
+          "message": "All 18 required headers present in order with non-empty content (356 lines)",
+          "details": {
+            "found_count": 18,
+            "missing_count": 0,
+            "found_headers": [
+              "Topic",
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "missing_headers": [],
+            "line_count": 356
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": true,
+          "message": "python_project_structure.py passed (331 lines, exit code 0)",
+          "details": {
+            "lesson_file": "python_project_structure.py",
+            "line_count": 331,
+            "exit_code": 0
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": true,
+          "message": "4 levels verified (Recall, Modify, Build, Debug), scaffolding present (# TODO & NotImplementedError)",
+          "details": {
+            "found_levels": [
+              "Recall",
+              "Modify",
+              "Build",
+              "Debug"
+            ],
+            "missing_levels": [],
+            "has_todo": true,
+            "has_not_implemented": true,
+            "line_count": 128
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": true,
+          "message": "solutions.py verified cleanly (exit code 0, 255 lines, no NotImplementedError)",
+          "details": {
+            "exit_code": 0,
+            "line_count": 255,
+            "has_not_implemented": false
+          }
+        }
+      }
+    },
+    {
+      "num": "32",
+      "name": "32_python_debugging",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 16/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 2,
+            "missing_count": 16,
+            "found_headers": [
+              "Topic",
+              "Concept"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 5
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "python_debugging.py is only 47 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "python_debugging.py",
+            "line_count": 47,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "exercises.py does not exist",
+          "details": {
+            "exists": false
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py does not exist",
+          "details": {
+            "exists": false
+          }
+        }
+      }
+    },
+    {
+      "num": "33",
+      "name": "33_integrated_projects",
+      "passed": false,
+      "checks": {
+        "1": {
+          "name": "README 18 Headers",
+          "passed": false,
+          "message": "Missing 17/18 headers: What You Will Learn, Prerequisites, The Problem...",
+          "details": {
+            "found_count": 1,
+            "missing_count": 17,
+            "found_headers": [
+              "Topic"
+            ],
+            "missing_headers": [
+              "What You Will Learn",
+              "Prerequisites",
+              "The Problem",
+              "Key Terminology",
+              "Intuition",
+              "Concept",
+              "Syntax",
+              "Example",
+              "Line-by-Line Explanation",
+              "What Python Is Doing",
+              "Common Mistakes",
+              "Real-World Uses",
+              "Connection to AI Agents",
+              "Practice",
+              "Challenge",
+              "Summary",
+              "What You Should Know Before Moving On"
+            ],
+            "line_count": 29
+          }
+        },
+        "2": {
+          "name": "Lesson Script",
+          "passed": false,
+          "message": "mini_agent.py is only 138 lines (requires >= 150)",
+          "details": {
+            "lesson_file": "mini_agent.py",
+            "line_count": 138,
+            "min_required": 150
+          }
+        },
+        "3": {
+          "name": "Exercises Scaffolding",
+          "passed": false,
+          "message": "exercises.py does not exist",
+          "details": {
+            "exists": false
+          }
+        },
+        "4": {
+          "name": "Solutions Execution",
+          "passed": false,
+          "message": "solutions.py does not exist",
+          "details": {
+            "exists": false
+          }
+        }
+      }
+    }
+  ]
+}

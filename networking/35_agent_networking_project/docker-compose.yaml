@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  proxy:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    networks:
+      - frontend_net
+
+  api:
+    image: python:3.9
+    # The API can talk to the proxy and the backend
+    networks:
+      - frontend_net
+      - backend_net
+
+  redis:
+    image: redis:alpine
+    # Redis is completely hidden from the proxy
+    networks:
+      - backend_net
+
+  worker:
+    image: python:3.9
+    # The worker talks to Redis and the MCP tools
+    networks:
+      - backend_net
+      
+  mcp_tool_sandbox:
+    image: python:3.9-slim
+    # The sandbox is highly restricted
+    networks:
+      - backend_net
+
+networks:
+  frontend_net:
+    driver: bridge
+  backend_net:
+    driver: bridge
+    internal: true # Cannot access the internet!
